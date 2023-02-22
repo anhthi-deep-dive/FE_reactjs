@@ -2,7 +2,7 @@ const path = require("path");
 
 const bundleStatsWebpackPlugin = require("./plugins/bundle-stats-webpack-plugin");
 const cleanWebpackPlugin = require("./plugins/clean-webpack-plugin");
-const copyWebpackPlugin = require("./plugins/copy-webpack-plugin");
+// const copyWebpackPlugin = require("./plugins/copy-webpack-plugin");
 const htmlWebpackPlugin = require("./plugins/html-webpack-plugin");
 const handleImages = require("./rules/handle-images");
 const handleSvg = require("./rules/handle-svg");
@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     htmlWebpackPlugin(),
-    copyWebpackPlugin(),
+    // copyWebpackPlugin(),
     cleanWebpackPlugin(),
     bundleStatsWebpackPlugin(),
   ],
