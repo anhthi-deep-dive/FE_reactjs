@@ -1,13 +1,6 @@
-# # Fragment
+# Fragment
 
 Fragment, often used via <>...</> syntax, lets you group elements without a wrapper node `without creating an extra node wrapper`
-
-Usage
-
-- Returning multiple elements
-- Assigning multiple elements to a variable
-- Grouping elements with text
-- Rendering a list of Fragments
 
 ```
   <>
@@ -15,6 +8,13 @@ Usage
     <AnotherChild />
   </>
 ```
+
+Usage
+
+- Returning multiple elements
+- Assigning multiple elements to a variable
+- Grouping elements with text
+- Rendering a list of Fragments
 
 ## Returning multiple elements
 
