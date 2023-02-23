@@ -1,3 +1,3 @@
 # reactjs-dd
 
-https://reactjs.org/docs/getting-started.html
+https://beta.reactjs.org/reference/react
