@@ -2,7 +2,7 @@
 
 useDebugValue is a React Hook that lets you `add a label to a custom Hook` in `React DevTools`
 
-## # Usage
+# # Usage
 
 - Adding a label to a custom Hook
 
