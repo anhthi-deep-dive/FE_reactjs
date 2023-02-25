@@ -1,5 +1,5 @@
-import { UseLayoutEffect } from "../docs/2. Hooks/useLayoutEffect/useLayoutEffect";
+import { UseTransaction } from "../docs/2. Hooks/useTransition/useTransition";
 
-const App = () => <UseLayoutEffect />;
+const App = () => <UseTransaction />;
 
 export default App;
