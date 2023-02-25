@@ -1,5 +1,5 @@
-import UseDeferredValue from "../docs/2. Hooks/6. useId/useId";
+import { UseLayoutEffect } from "../docs/2. Hooks/9. useLayoutEffect/useLayoutEffect";
 
-const App = () => <UseDeferredValue />;
+const App = () => <UseLayoutEffect />;
 
 export default App;

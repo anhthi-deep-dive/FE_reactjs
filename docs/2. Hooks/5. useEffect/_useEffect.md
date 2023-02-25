@@ -1,6 +1,6 @@
 # useEffect
 
-useEffect is a React Hook that lets you `synchronize a component with an external system`
+useEffect is a React Hook that lets you `synchronize a component with an external system`. The useEffect `runs after the browser repaint` the screen
 
 ```
   useEffect(() => {
@@ -8,22 +8,7 @@ useEffect is a React Hook that lets you `synchronize a component with an externa
   }, [dependencies])
 ```
 
-# # Reference
-
-Call useEffect `at the top level of your component` to declare an Effect
-
-### Parameters
-
-- setup: The function with your Effect’s logic. Your setup function may also optionally `return a cleanup function`
-- optional dependencies: Trigger setup function if one of dependencies change (use Object.is for comparison)
-
-### Returns
-
-- useEffect returns undefined
-
-### Caveats
-
-- useEffect `is a Hook`, so you can only call it `at the top level of your component` or `your own Hooks`. If need to call inside a loop or condition, extract a new component
+## # Caveats
 
 - `Don't need an Effect` if we `don't sync with other external system`
 
@@ -33,7 +18,7 @@ Call useEffect `at the top level of your component` to declare an Effect
 
 - Effects only run on the client. They `don’t run during server rendering`
 
-# # Usage
+## # Usage
 
 ### Connecting to an external system
 
