@@ -1,4 +1,4 @@
-import { UseLayoutEffect } from "../docs/2. Hooks/9. useLayoutEffect/useLayoutEffect";
+import { UseLayoutEffect } from "../docs/2. Hooks/useLayoutEffect/useLayoutEffect";
 
 const App = () => <UseLayoutEffect />;
 
