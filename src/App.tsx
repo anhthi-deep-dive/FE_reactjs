@@ -1,5 +1,5 @@
-import UseId from "../docs/2. Hooks/6. useId/useId.jsx";
+import UseDeferredValue from "../docs/2. Hooks/6. useId/useId";
 
-const App = () => <UseId />;
+const App = () => <UseDeferredValue />;
 
 export default App;

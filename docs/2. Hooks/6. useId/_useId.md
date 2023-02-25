@@ -1,22 +1,9 @@
 # useId
 
 useId is a React Hook for `generating unique IDs` that can be `passed to accessibility attributes`
+useId `should not be used` to `generate keys in a list`
 
-# # Reference
-
-Call useId at the top level of your component to generate a unique ID
-
-### Parameters
-
-- useId does not take any parameters
-
-### Returns
-
-### Caveats
-
-- useId `should not be used` to `generate keys in a list`
-
-# # Usage
+## # Usage
 
 ### Generating unique IDs for accessibility attributes
 
@@ -27,6 +14,7 @@ HTML accessibility attributes like aria-describedby let you specify that two tag
 
   function PasswordField() {
     const passwordHintId = useId();
+
     return (
       <>
         <label>
@@ -43,3 +31,7 @@ HTML accessibility attributes like aria-describedby let you specify that two tag
     );
   }
 ```
+
+## # Reference
+
+https://www.youtube.com/watch?v=78vjoLkWCBw&t=451s&ab_channel=HoleTex

@@ -1,8 +1,16 @@
 # useContext
 
+https://beta.reactjs.org/reference/react/useContext
+
 useContext is a React Hook that `lets you read and subscribe to context` from your component
 
+## # Usage
+
+- `Passing data deeply` into the tree
+
 ```
+  export const ThemeContext = createContext(null);
+
   function MyPage() {
     return (
       <ThemeContext.Provider value="dark">
@@ -22,10 +30,24 @@ useContext is a React Hook that `lets you read and subscribe to context` from yo
   }
 ```
 
-## # Usage
-
-- `Passing data deeply` into the tree
 - `Updating data passed` via context
+
+```
+  function MyPage() {
+    const [theme, setTheme] = useState('dark');
+    return (
+      <ThemeContext.Provider value={theme}>
+        <Form />
+        <Button onClick={() => {
+          setTheme('light');
+        }}>
+          Switch to light theme
+        </Button>
+      </ThemeContext.Provider>
+    );
+  }
+```
+
 - Specifying a `fallback default value`
 
 ```

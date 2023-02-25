@@ -6,7 +6,7 @@ const UseDeferredValue = () => {
 
   const list = useMemo(() => {
     const result = [];
-    for (let i = 0; i < 20000; i++) {
+    for (let i = 0; i < 50000; i++) {
       result.push(deferredQuery);
     }
 
@@ -14,8 +14,12 @@ const UseDeferredValue = () => {
   }, [deferredQuery]);
 
   useEffect(() => {
-    console.log("query - deferredQuery: ", query, deferredQuery);
-  }, [query, deferredQuery]);
+    console.log("query: ", query);
+  }, [query]);
+
+  useEffect(() => {
+    console.log("deferredQuery: ", deferredQuery);
+  }, [deferredQuery]);
 
   return (
     <>
