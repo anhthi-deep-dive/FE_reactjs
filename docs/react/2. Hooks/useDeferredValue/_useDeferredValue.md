@@ -1,6 +1,6 @@
 # useDeferredValue
 
-useDeferredValue is a React Hook that lets you `defer updating a part of the UI`. The useDeferredValue will `firstly render for the original data` (from Props or State) and `try another re-render` with the deferred value `after the first render is done`
+useDeferredValue is a React Hook that lets you `defer updating a part of the UI` to keep showing the previous results. The useDeferredValue will `firstly render for the original data` (from Props or State) and `try another re-render` with the deferred value `after the first render is done`
 
 ```
   function SearchPage() {

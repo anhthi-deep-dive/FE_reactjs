@@ -1,6 +1,6 @@
 # Fragment
 
-Fragment, often used via <>...</> syntax, lets you group elements without a wrapper node `without creating an extra node wrapper`
+Fragment, often used via <>...</> syntax, lets you `group elements without a wrapper node`
 
 ```
   <>
@@ -9,14 +9,9 @@ Fragment, often used via <>...</> syntax, lets you group elements without a wrap
   </>
 ```
 
-Usage
+## # Usage
 
-- Returning multiple elements
-- Assigning multiple elements to a variable
-- Grouping elements with text
-- Rendering a list of Fragments
-
-## Returning multiple elements
+### Returning multiple elements
 
 ```
   function Post() {
@@ -29,7 +24,7 @@ Usage
   }
 ```
 
-## Assigning multiple elements to a variable
+### Assigning multiple elements to a variable
 
 ```
   function CloseDialog() {
@@ -39,6 +34,7 @@ Usage
         <CancelButton />
       </>
     );
+
     return (
       <AlertDialog buttons={buttons}>
         Are you sure you want to leave this page?
@@ -47,7 +43,7 @@ Usage
   }
 ```
 
-## Grouping elements with text
+### Grouping elements with text
 
 ```
   function DateRangePicker({ start, end }) {
@@ -62,7 +58,7 @@ Usage
   }
 ```
 
-## Rendering a list of Fragments
+### Rendering a list of Fragments
 
 ```
   function Blog() {
